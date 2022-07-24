@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forks-n-spoons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="food.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <div class="navbar">
+        <h2>Forks-n-Spoons</h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          class="icon"
+          width="48"
+        >
+          <path
+            d="M15.9 38.35h2.5v-13.9q1.45-.2 2.475-1.325Q21.9 22 21.9 20.55v-7.7q0-.5-.35-.825-.35-.325-.85-.325t-.825.325q-.325.325-.325.825v6h-1.1v-6q0-.5-.325-.825-.325-.325-.825-.325-.5 0-.825.325-.325.325-.325.825v6H14.7v-6q0-.5-.325-.825-.325-.325-.825-.325-.5 0-.825.325-.325.325-.325.825v7.7q0 1.45 1 2.575 1 1.125 2.5 1.325Zm12.65 0h2.5v-13.3q1.75-.7 2.75-2.5t1-4.2q0-2.85-1.375-4.75t-3.475-1.9q-2.1 0-3.45 1.9t-1.35 4.75q0 2.55.9 4.3t2.5 2.4ZM7 44q-1.2 0-2.1-.9Q4 42.2 4 41V7q0-1.2.9-2.1Q5.8 4 7 4h34q1.2 0 2.1.9.9.9.9 2.1v34q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34V7H7v34Zm0 0V7v34Z"
+          /></svg
+        ><path
+          xmlns="http://www.w3.org/2000/svg"
+          d="M15.9 38.35h2.5v-13.9q1.45-.2 2.475-1.325Q21.9 22 21.9 20.55v-7.7q0-.5-.35-.825-.35-.325-.85-.325t-.825.325q-.325.325-.325.825v6h-1.1v-6q0-.5-.325-.825-.325-.325-.825-.325-.5 0-.825.325-.325.325-.325.825v6H14.7v-6q0-.5-.325-.825-.325-.325-.825-.325-.5 0-.825.325-.325.325-.325.825v7.7q0 1.45 1 2.575 1 1.125 2.5 1.325Zm12.65 0h2.5v-13.3q1.75-.7 2.75-2.5t1-4.2q0-2.85-1.375-4.75t-3.475-1.9q-2.1 0-3.45 1.9t-1.35 4.75q0 2.55.9 4.3t2.5 2.4ZM7 44q-1.2 0-2.1-.9Q4 42.2 4 41V7q0-1.2.9-2.1Q5.8 4 7 4h34q1.2 0 2.1.9.9.9.9 2.1v34q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34V7H7v34Zm0 0V7v34Z"
+        />
+        <ul class="nav-items">
+          <li onclick="scrlhome()"><a href="#">home</a></li>
+          <li onclick="scrlfood()"><a href="#ingredient">find food</a></li>
+          <li onclick="scrlcnt()"><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+      <div class="home-content">
+        <img name="slide" width="100%" height="650" class="main-background" />
+        <div class="content">
+          <p>NOTHING BRING PEOPLE CLOSE LIKE GOOD FOOD</p>
+          <p>JOIN OUR COMMUNITY OF AWESOME FOODIES</p>
+          <button class="login"><a href="loginform.html">JOIN HERE</a></button>
+          <br /><br />
+          <p style="color: brown">
+            HERE WE PROVIDE YOU A NUMBER OF RECIPES BASED ON THE INGREDIENT YOU
+            SEARCH. JUST TYPE IN THE INGREDIENT, FOLLOW THE RECIPE AND EAT GOOD
+            FOOD.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="foood">
+      <h1>FIND THE BEST FOOD RECIPES</h1>
+      <h1>SEARCH HERE, TYPE IN THE INGREDIENT</h1>
+      <input
+        type="text"
+        id="ingredient"
+        placeholder="ENTER YOUR INGREDIENT HERE"
+      /><span><button class="search">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <path
+            d="M39.8 41.95 26.65 28.8q-1.5 1.3-3.5 2.025-2 .725-4.25.725-5.4 0-9.15-3.75T6 18.75q0-5.3 3.75-9.05 3.75-3.75 9.1-3.75 5.3 0 9.025 3.75 3.725 3.75 3.725 9.05 0 2.15-.7 4.15-.7 2-2.1 3.75L42 39.75Zm-20.95-13.4q4.05 0 6.9-2.875Q28.6 22.8 28.6 18.75t-2.85-6.925Q22.9 8.95 18.85 8.95q-4.1 0-6.975 2.875T9 18.75q0 4.05 2.875 6.925t6.975 2.875Z"
+          /></svg
+        ><path
+          xmlns="http://www.w3.org/2000/svg"
+          d="M39.8 41.95 26.65 28.8q-1.5 1.3-3.5 2.025-2 .725-4.25.725-5.4 0-9.15-3.75T6 18.75q0-5.3 3.75-9.05 3.75-3.75 9.1-3.75 5.3 0 9.025 3.75 3.725 3.75 3.725 9.05 0 2.15-.7 4.15-.7 2-2.1 3.75L42 39.75Zm-20.95-13.4q4.05 0 6.9-2.875Q28.6 22.8 28.6 18.75t-2.85-6.925Q22.9 8.95 18.85 8.95q-4.1 0-6.975 2.875T9 18.75q0 4.05 2.875 6.925t6.975 2.875Z"
+        />
+      </button></span>
+    </div>
+    <div class="foodcontainer notFound">
+      <!-- <div class="food-item">  
+            <img
+            class="food-img"
+            src="https://static.toiimg.com/thumb/msid-87034836,width-900,height-1200,resizemode-6.cms" alt=""/>
+            <p class="meal-name">FRENCH FRIES</p>
+            <a href="#"><button class="recipe">GET RECIPE</button></a> 
+          </div>
+         -->
+    </div>
+
+    <div class="recipe-details">
+      <!-- <h2 class="title">FRENCH FRIES</h2>
+      <h3 class="ingredients">POTATO</h3>
+      <img
+        class="recipe-meal-img"
+        src="https://static.toiimg.com/thumb/msid-87034836,width-900,height-1200,resizemode-6.cms"
+        alt=""
+      />
+      <div class="recipe-instruct">
+        <h3>INSTRUCTIONS</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse,
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+          ducimus atque voluptates dicta quam necessitatibus sit libero
+          consectetur dignissimos sed excepturi corporis amet fugit impedit ut,
+          porro rem in delectus asperiores pariatur maiores, expedita incidunt
+          aspernatur. Sunt laborum fugiat, cum officia, nihil illo quod culpa
+          adipisci ipsa expedita dolorem voluptatum labore in alias dicta! Nam
+          exercitationem similique voluptatibus cum, distinctio ducimus,
+          reprehenderit accusantium debitis, fugit est vero placeat magnam
+          laudantium tempore reiciendis quisquam veritatis. Illo, quibusdam
+          dolorum perferendis reiciendis repudiandae ullam repellat hic vitae,
+          in impedit similique ipsum velit quod minima assumenda delectus ipsam
+          quasi. Commodi qui vitae, quidem voluptas distinctio accusamus
+          suscipit nihil magni perspiciatis sequi repellat explicabo illum
+          provident hic itaque blanditiis, ratione doloremque? Consequatur
+          adipisci sapiente accusamus repellendus deleniti dicta quibusdam
+          placeat voluptatibus, quia dolores consequuntur consectetur delectus!
+        </p>
+      </div>
+      <a href="" class="recipe-link">watch video</a>
+      <button class="close">CLOSE</button> -->
+    </div>
+    <div id="contact">
+      <h1><center>Yash Saxena</center></h1>
+      <h2><center>yash10decsaxena@gmail.com</center></h2>
+    </div>
+    <button class="taptotop" onclick="scrltop()">
+      <h3>BACK <br> TO <br> TOP</h3>
+  </button>
+    <script src="food.js"></script>
+  </body>
+</html>

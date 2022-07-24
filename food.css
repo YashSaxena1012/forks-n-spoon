@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-background {
+  display: inline;
+  margin-top: 1.5rem;
+  width: 50%;
+  height: 85vh;
+}
+
+.icon {
+  width: 5rem;
+  height: 3rem;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgba(173, 167, 167, 0.1);
+}
+
+.navbar h2 {
+  width: 8.15rem;
+  margin: 0.5rem 1rem;
+}
+
+.nav-items {
+  text-transform: capitalize;
+  margin-left: 31rem;
+  margin-top: 0.5rem;
+  font-size: x-large;
+  list-style-type: none;
+  display: flex;
+  column-gap: 6rem;
+}
+
+.nav-items li {
+  transition: 1s;
+  width: 6rem;
+  text-align: center;
+}
+.nav-items li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-items li:hover {
+  border-radius: 1rem;
+  border: none;
+  width: 8rem;
+  background: rgb(255, 255, 255);
+}
+
+.home-content {
+  display: flex;
+}
+
+.content {
+  font-size: xx-large;
+  margin: 3rem 3rem;
+  color: rgb(56, 51, 51);
+  font-weight: 600;
+}
+.login {
+  width: 10rem;
+  transition: 1s;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: large;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 1rem;
+}
+.login a {
+  color: black;
+  text-decoration: none;
+  transition: 1s;
+}
+.login a:hover {
+  color: white;
+}
+.login:hover {
+  box-shadow: 0px 0px 10px red;
+  background-color: red;
+}
+.foood h1 {
+  color: tomato;
+  margin-top: 1rem;
+  text-align: center;
+}
+#ingredient {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  width: 20rem;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 0.2rem;
+}
+.search {
+  width: 4rem;
+  height: 3rem;
+  position: relative;
+  top: -4.5rem;
+  left: 53rem;
+}
+.foodcontainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.food {
+  border-radius: 1rem;
+  margin: 2rem;
+  box-shadow: 0px 0px 15px grey;
+  height: 25rem;
+  width: 20%;
+}
+.recipe {
+  transition: 0.5s;
+  background-color: chocolate;
+  width: 10rem;
+  border: 2px solid rgb(211, 154, 49);
+  margin: 1rem 20%;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 0.75rem;
+  color: cornsilk;
+}
+.recipe:hover {
+  color: chocolate;
+  background-color: whitesmoke;
+  transform: scale(1.07);
+}
+.food img {
+  margin: 5%;
+  width: 90%;
+  height: 50%;
+}
+.food p {
+  font-weight: 500;
+  font-size: larger;
+  text-align: center;
+}
+.recipe-details {
+  display: none;
+  width: 50rem;
+  padding: 0.25rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 20px black;
+  background: rgba(198, 199, 195, 0.918);
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  text-align: center;
+  transform: translate(-50%, 50%);
+}
+.ingredients {
+  color: cornsilk;
+  width: 5rem;
+  padding: 0.2rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  background: rgb(105, 105, 172);
+}
+.title {
+  margin: 1rem;
+  color: crimson;
+}
+.recipe-meal-img img {
+  width: 8rem;
+  margin-top: 1rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.recipe-instruct {
+  font-size: x-large;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  margin: 1rem;
+}
+.close {
+  transition: 0.5s;
+  background-color: rgb(210, 30, 30);
+  width: 10rem;
+  border: none;
+  box-shadow: 0px 0px 10px red;
+  margin: 1rem auto;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 0.75rem;
+  color: cornsilk;
+}
+.recipe-link {
+  width: 20%;
+  display: block;
+  margin: 2rem auto;
+}
+.recipe-link a {
+  font-size: x-large;
+  color: brown;
+  text-decoration: none;
+}
+.notFound {
+  display: none;
+}
+
+#contact {
+  background-color: black;
+  color: rgb(172, 114, 27);
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    /* bottom: -5rem; */
+  height: 6rem;
+}
+.taptotop {
+  display: none;
+  position: sticky;
+  left: 77rem;
+  bottom: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  transition: 1s;
+}
+
+.taptotop:hover {
+  transform: scale(1.05);
+  border: 2px solid white;
+  color: crimson;
+  box-shadow: 0px 0px 10px red;
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    width: 100%;
+    height: 7rem;
+    font-size: x-large;
+  }
+  .nav-items {
+    display: block;
+    position: absolute;
+    right: 10%;
+  }
+  .nav-items li {
+    font-size: x-large;
+  }
+  .home-content {
+    display: block;
+  }
+  .main-background {
+    width: 100%;
+  }
+  .home-content p {
+    text-align: center;
+    font-size: medium;
+    width: 100%;
+  }
+  .login {
+    margin: 0rem 5rem;
+    display: block;
+    width: 8rem;
+  }
+  .foood h1 {
+    font-size: medium;
+    width: 100%;
+  }
+  #ingredient {
+    margin-top: 1rem;
+    width: 70%;
+  }
+  .search {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    width: 3rem;
+    display: block;
+    margin: auto;
+  }
+  .food {
+    width: 70%;
+    height: 100%;
+  }
+  .recipe-details {
+    width: 100%;
+  }
+  .recipe-instruct {
+    width: 100%;
+    word-break: normal;
+    margin: 0;
+  }
+  
+}
+
+@media (min-width:521px) and (max-width:1023px){
+  .navbar{
+    width: 100%;
+  }
+.nav-items{
+  margin-left: 15rem;
+}
+.nav-items li {
+  margin-left: -5rem;
+}
+.main-background {
+  width:50%;
+  height: 20rem;
+}
+.home-content p {
+  text-align: center;
+  font-size: medium;
+  width: 100%;
+}
+.login {
+  margin: 0rem 5rem;
+  display: block;
+  width: 8rem;
+}
+.foood h1 {
+  font-size: medium;
+  width: 100%;
+}
+.search {
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  width: 3rem;
+  display: block;
+  margin: auto;
+}
+.food {
+  width: 35%;
+  height: 50%;
+}
+.recipe-details {
+  width: 90%;
+  margin: auto;
+}
+}
